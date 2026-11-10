@@ -1,0 +1,104 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Compra segura" 
+  description="Tus pagos en Chaito están protegidos y respaldados por la pasarela de pagos QR del BCP."
+>
+  <!-- HERO -->
+  <section class="bg-[#f8f5fc] border-b border-purple-100 overflow-hidden relative">
+    <div class="container mx-auto px-4 md:px-8 py-16 md:py-24 text-center max-w-4xl flex flex-col items-center gap-6">
+      <div class="w-16 h-16 bg-[#4b005f] text-white rounded-full flex items-center justify-center mb-2 shadow-lg">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <path d="M9 12l2 2 4-4"/>
+        </svg>
+      </div>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#4b005f] leading-tight">
+        Tu dinero,<br/>siempre a buen recaudo
+      </h1>
+      <p class="text-lg text-[var(--content-secondary)] leading-relaxed max-w-2xl">
+        En Chaito nos tomamos muy en serio la seguridad de tus fondos. Por eso, hemos elegido la tecnología financiera más robusta del país para procesar cada una de tus compras.
+      </p>
+    </div>
+  </section>
+
+  <!-- BLOQUE PRINCIPAL: TECNOLOGÍA BCP -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="bg-white rounded-3xl border border-purple-100 p-8 md:p-16 shadow-sm max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        
+        <!-- Ilustración / Icono QR -->
+        <div class="w-full lg:w-2/5 flex justify-center">
+          <div class="w-full aspect-square max-w-[300px] bg-[#f8f5fc] rounded-3xl border border-purple-100 flex flex-col items-center justify-center p-8 shadow-inner relative">
+            <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-[#4b005f]" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7" rx="1"/>
+              <rect x="14" y="3" width="7" height="7" rx="1"/>
+              <rect x="14" y="14" width="7" height="7" rx="1"/>
+              <rect x="3" y="14" width="7" height="7" rx="1"/>
+              <rect x="6" y="6" width="1" height="1"/>
+              <rect x="17" y="6" width="1" height="1"/>
+              <rect x="17" y="17" width="1" height="1"/>
+              <rect x="6" y="17" width="1" height="1"/>
+            </svg>
+            <div class="absolute -bottom-4 bg-white border border-purple-100 px-4 py-2 rounded-full shadow-md text-sm font-bold text-[#4b005f] flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+              Conexión Segura
+            </div>
+          </div>
+        </div>
+
+        <!-- Texto Explicativo -->
+        <div class="w-full lg:w-3/5 flex flex-col gap-6">
+          <span class="text-sm font-bold uppercase tracking-wider text-[#4b005f]">
+            Infraestructura de Grado Bancario
+          </span>
+          <h2 class="text-3xl md:text-4xl font-bold text-[#4b005f] leading-tight">
+            Respaldados por la pasarela de pagos del BCP
+          </h2>
+          <p class="text-gray-500 leading-relaxed text-lg">
+            Utilizamos la pasarela de pagos por <strong>QR del Banco de Crédito de Bolivia (BCP)</strong>. Esto garantiza que cada vez que realizas un pago, tus fondos se procesan con los más altos estándares de seguridad bancaria.
+          </p>
+          <div class="grid sm:grid-cols-2 gap-6 mt-4">
+            <div class="flex flex-col gap-2">
+              <div class="flex items-center gap-2 text-[#4b005f] font-bold">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                Transacciones Encriptadas
+              </div>
+              <p class="text-sm text-gray-500">Nadie, ni siquiera nosotros, tiene acceso a tu información bancaria privada.</p>
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="flex items-center gap-2 text-[#4b005f] font-bold">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                Garantía de Fondos
+              </div>
+              <p class="text-sm text-gray-500">Tu dinero se acredita correctamente y se resguarda hasta que la logística se completa.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="bg-[#f8f5fc] border border-purple-100 rounded-[2rem] p-12 md:p-20 text-center flex flex-col items-center gap-8 shadow-sm">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#4b005f] max-w-2xl">
+          Compra con total tranquilidad
+        </h2>
+        <p class="text-gray-500 text-lg max-w-xl">
+          Explora nuestro catálogo y paga fácilmente desde la app de tu banco favorito escaneando un simple QR.
+        </p>
+        <a 
+          href="https://chaito.com.bo" 
+          class="mt-2 inline-flex items-center justify-center bg-[#4b005f] hover:bg-[#370a46] text-white px-10 py-4 rounded-xl font-bold text-lg transition-colors shadow-md"
+        >
+          Ir a comprar
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

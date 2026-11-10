@@ -1,0 +1,150 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Cómo funciona" 
+  description="Descubre cómo Chaito simplifica las compras y ventas en Bolivia actuando como tu intermediario de confianza."
+>
+  <!-- HERO -->
+  <section class="bg-[#f8f5fc] border-b border-purple-100 overflow-hidden relative">
+    <div class="container mx-auto px-4 md:px-8 py-16 md:py-24 text-center max-w-4xl flex flex-col items-center gap-6">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#4b005f] leading-tight">
+        Nosotros nos encargamos de todo lo complicado
+      </h1>
+      <p class="text-lg text-[var(--content-secondary)] leading-relaxed max-w-2xl">
+        Chaito funciona como tu intermediario de confianza. Ya sea que quieras comprar sin riesgo o vender sin preocuparte por la logística, nuestro modelo protege tanto tu dinero como tus productos.
+      </p>
+    </div>
+  </section>
+
+  <!-- EL MODELO CHAITO (Centro de la propuesta de valor) -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="bg-white rounded-3xl border border-purple-100 p-8 md:p-12 shadow-sm max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
+        <div class="flex-1 flex flex-col gap-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-[#4b005f]">
+            El Centro de Control Logístico
+          </h2>
+          <p class="text-gray-500 leading-relaxed text-lg">
+            Cuando se realiza una compra en Chaito, el producto no va directamente del vendedor al comprador. Primero pasa por nosotros. <strong>Recibimos el producto, verificamos que esté en perfecto estado y completamos el envío al cliente final.</strong>
+          </p>
+          <p class="text-gray-500 leading-relaxed text-lg">
+            Esto garantiza que el cliente reciba exactamente lo que compró, y que el vendedor tenga la seguridad de que su pago ha sido procesado exitosamente antes de despachar su mercadería.
+          </p>
+        </div>
+        <div class="w-full md:w-1/3 flex justify-center">
+          <div class="w-40 h-40 bg-purple-50 rounded-full flex items-center justify-center border-8 border-white shadow-lg text-[#4b005f]">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PASO A PASO: COMPRADORES -->
+  <section class="py-16 md:py-24 bg-[#f8f5fc] border-t border-purple-100">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-sm font-bold uppercase tracking-wider text-[#4b005f] mb-2 block">Para ti que compras</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-[#4b005f]">Solo paga y espera tu pedido</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Paso 1 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-purple-50 flex flex-col relative pt-12 mt-6">
+          <div class="w-12 h-12 bg-[#4b005f] text-white font-bold text-xl rounded-full flex items-center justify-center absolute -top-6 left-8 shadow-md">1</div>
+          <h3 class="text-xl font-bold text-[#4b005f] mb-3">Eliges y pagas</h3>
+          <p class="text-gray-500 leading-relaxed text-sm">
+            Encuentra lo que necesitas y realiza tu pago de forma segura a través de un código QR simple y rápido. El dinero se guarda de forma segura con nosotros.
+          </p>
+        </div>
+
+        <!-- Paso 2 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-purple-50 flex flex-col relative pt-12 mt-6 md:mt-0">
+          <div class="w-12 h-12 bg-[#4b005f] text-white font-bold text-xl rounded-full flex items-center justify-center absolute -top-6 left-8 shadow-md">2</div>
+          <h3 class="text-xl font-bold text-[#4b005f] mb-3">Nosotros verificamos</h3>
+          <p class="text-gray-500 leading-relaxed text-sm">
+            Recibimos el producto del vendedor en nuestro centro logístico y hacemos un control de calidad para asegurar que está en buen estado y es exactamente lo que pediste.
+          </p>
+        </div>
+
+        <!-- Paso 3 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-purple-50 flex flex-col relative pt-12 mt-6 md:mt-0">
+          <div class="w-12 h-12 bg-[#4b005f] text-white font-bold text-xl rounded-full flex items-center justify-center absolute -top-6 left-8 shadow-md">3</div>
+          <h3 class="text-xl font-bold text-[#4b005f] mb-3">Recibes en tu puerta</h3>
+          <p class="text-gray-500 leading-relaxed text-sm">
+            Completamos la logística y te entregamos tu paquete. Sin intermediaciones dudosas, sin sorpresas. Tu única responsabilidad es abrir la puerta.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PASO A PASO: VENDEDORES -->
+  <section class="py-16 md:py-24 bg-white border-t border-purple-100">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-sm font-bold uppercase tracking-wider text-[#4b005f] mb-2 block">Para ti que vendes</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-[#4b005f]">Solo envía el paquete y cobra</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Paso 1 -->
+        <div class="bg-[#f8f5fc] p-8 rounded-2xl shadow-sm border border-purple-50 flex flex-col relative pt-12 mt-6">
+          <div class="w-12 h-12 bg-white text-[#4b005f] border-2 border-[#4b005f] font-bold text-xl rounded-full flex items-center justify-center absolute -top-6 left-8 shadow-sm">1</div>
+          <h3 class="text-xl font-bold text-[#4b005f] mb-3">Abres tu tienda</h3>
+          <p class="text-gray-500 leading-relaxed text-sm">
+            No importa el tamaño de tu negocio. Crea tu cuenta, sube tus productos al catálogo de Chaito y define tus precios. Nosotros procesamos los pagos de tus clientes.
+          </p>
+        </div>
+
+        <!-- Paso 2 -->
+        <div class="bg-[#f8f5fc] p-8 rounded-2xl shadow-sm border border-purple-50 flex flex-col relative pt-12 mt-6 md:mt-0">
+          <div class="w-12 h-12 bg-white text-[#4b005f] border-2 border-[#4b005f] font-bold text-xl rounded-full flex items-center justify-center absolute -top-6 left-8 shadow-sm">2</div>
+          <h3 class="text-xl font-bold text-[#4b005f] mb-3">Nos envías la venta</h3>
+          <p class="text-gray-500 leading-relaxed text-sm">
+            Cuando se confirma una compra, te notificamos. Solo tienes que empacar tu producto y hacérnoslo llegar a nuestro centro logístico.
+          </p>
+        </div>
+
+        <!-- Paso 3 -->
+        <div class="bg-[#f8f5fc] p-8 rounded-2xl shadow-sm border border-purple-50 flex flex-col relative pt-12 mt-6 md:mt-0">
+          <div class="w-12 h-12 bg-white text-[#4b005f] border-2 border-[#4b005f] font-bold text-xl rounded-full flex items-center justify-center absolute -top-6 left-8 shadow-sm">3</div>
+          <h3 class="text-xl font-bold text-[#4b005f] mb-3">Cobras desde casa</h3>
+          <p class="text-gray-500 leading-relaxed text-sm">
+            Una vez que verificamos que el producto está en buen estado, completamos el envío al cliente y liberamos el dinero directamente a tu cuenta. Así de fácil.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="bg-[#4b005f] rounded-[2rem] p-12 md:p-16 text-center flex flex-col items-center gap-8 shadow-lg max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-white max-w-2xl">
+          ¿Listo para empezar en Chaito?
+        </h2>
+        <div class="flex flex-col sm:flex-row gap-4 mt-2 w-full justify-center">
+          <a 
+            href="https://chaito.com.bo" 
+            class="inline-flex items-center justify-center bg-white text-[#4b005f] hover:bg-gray-50 px-10 py-4 rounded-xl font-bold text-lg transition-colors shadow-md w-full sm:w-auto"
+          >
+            Quiero Comprar
+          </a>
+          <a 
+            href="/sell" 
+            class="inline-flex items-center justify-center bg-[#370a46] border border-purple-400/30 hover:border-purple-400 text-white px-10 py-4 rounded-xl font-bold text-lg transition-colors shadow-sm w-full sm:w-auto"
+          >
+            Quiero Vender
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,71 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Trabaja con nosotros" 
+  description="Únete al equipo de Chaito."
+>
+  <!-- HERO (Cultural) -->
+  <section class="bg-white py-16 md:py-24 border-b border-gray-100">
+    <div class="container mx-auto px-4 md:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="flex flex-col gap-6">
+        <h1 class="text-4xl md:text-5xl font-bold text-[#4b005f] leading-tight">
+          Construye el futuro del e-commerce
+        </h1>
+        <p class="text-lg text-gray-500 leading-relaxed max-w-lg">
+          Buscamos talento local apasionado por resolver problemas complejos y transformar la forma en la que Bolivia compra y vende en internet.
+        </p>
+      </div>
+      <div class="bg-[#f8f5fc] p-8 md:p-12 rounded-3xl border border-purple-100 text-[#4b005f]">
+        <blockquote class="text-xl md:text-2xl font-medium leading-relaxed">
+          "No somos una corporación tradicional. Somos un equipo ágil que valora las ideas, la ejecución rápida y el código limpio."
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CULTURA Y POSICIONES (Dos Columnas) -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="grid md:grid-cols-2 gap-16">
+        
+        <!-- Columna Izquierda: Cultura -->
+        <div class="flex flex-col gap-8">
+          <h2 class="text-2xl font-bold text-[#4b005f]">Lo que valoramos</h2>
+          <div class="flex flex-col gap-6">
+            <div class="border-l-2 border-[#4b005f] pl-4">
+              <h3 class="font-bold text-gray-900">Impacto directo</h3>
+              <p class="text-gray-500 text-sm mt-1">El código que escribas o los procesos que diseñes afectarán a miles de bolivianos diariamente.</p>
+            </div>
+            <div class="border-l-2 border-[#4b005f] pl-4">
+              <h3 class="font-bold text-gray-900">Cultura horizontal</h3>
+              <p class="text-gray-500 text-sm mt-1">Las mejores ideas ganan, sin importar tu puesto. Fomentamos la autonomía total.</p>
+            </div>
+            <div class="border-l-2 border-[#4b005f] pl-4">
+              <h3 class="font-bold text-gray-900">Desafíos reales</h3>
+              <p class="text-gray-500 text-sm mt-1">Trabaja resolviendo problemas de logística, escalabilidad de bases de datos y experiencia de usuario.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Aplicación -->
+        <div class="bg-white p-8 md:p-10 rounded-2xl shadow-sm border border-purple-100 flex flex-col justify-center gap-6">
+          <h2 class="text-2xl font-bold text-[#4b005f]">Postulaciones abiertas</h2>
+          <p class="text-gray-500">
+            Si eres desarrollador, diseñador, operativo o simplemente tienes la energía para impulsar nuestra visión, queremos conocerte.
+          </p>
+          <div class="bg-purple-50 rounded-xl p-4 text-sm text-[#4b005f] font-medium">
+            Envía tu CV, portafolio o GitHub, y cuéntanos de qué proyecto estás más orgulloso.
+          </div>
+          <a 
+            href="mailto:contacto@chaito.com.bo?subject=Postulación%20Abierta" 
+            class="mt-2 inline-flex items-center justify-center bg-[#4b005f] hover:bg-[#370a46] text-white px-8 py-4 rounded-xl font-medium transition-colors shadow-md"
+          >
+            Enviar correo a contacto@chaito.com.bo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

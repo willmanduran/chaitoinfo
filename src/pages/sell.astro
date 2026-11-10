@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Vende en Chaito" 
+  description="Lleva tu negocio al siguiente nivel con Chaito."
+>
+  <!-- HERO -->
+  <section class="bg-[#f8f5fc] border-b border-purple-100 overflow-hidden relative">
+    <div class="container mx-auto px-4 md:px-8 py-16 md:py-24 text-center max-w-4xl flex flex-col items-center gap-6">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#4b005f] leading-tight">
+        El aparador digital más grande de Bolivia
+      </h1>
+      <p class="text-lg text-[var(--content-secondary)] leading-relaxed">
+        Conecta tus productos con miles de compradores diarios. Te damos la tecnología, la logística y la visibilidad; tú solo te encargas de ofrecer lo mejor.
+      </p>
+      <a 
+        href="https://vendedores.chaito.com.bo/" 
+        class="mt-4 inline-flex items-center justify-center bg-[#4b005f] hover:bg-[#370a46] text-white px-10 py-4 rounded-xl font-medium transition-colors shadow-md"
+      >
+        Abre tu tienda hoy
+      </a>
+    </div>
+  </section>
+
+  <!-- BLOQUE VISUAL 1: Inventario -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 md:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="flex flex-col gap-6 order-2 lg:order-1">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#4b005f] leading-tight">
+          Gestión de inventario sin fricción
+        </h2>
+        <p class="text-lg text-gray-500 leading-relaxed">
+          Olvídate de los Excel complicados. Sube tus productos, ajusta precios y controla tu stock ingresando a tu panel de control desde cualquier navegador web. Diseñado específicamente para ser rápido y ligero.
+        </p>
+      </div>
+      <div class="order-1 lg:order-2 w-full aspect-video bg-purple-50 rounded-3xl border border-purple-100 flex items-center justify-center overflow-hidden shadow-inner">
+        <img 
+          src="/images/sell-inventory.jpg" 
+          alt="Panel de administración de vendedores" 
+          class="w-full h-full object-cover object-center" 
+          loading="lazy" 
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOQUE VISUAL 2: Pagos -->
+  <section class="py-16 md:py-24 bg-[#f8f5fc]">
+    <div class="container mx-auto px-4 md:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="w-full aspect-square md:aspect-video bg-white rounded-3xl border border-purple-100 flex items-center justify-center overflow-hidden shadow-sm">
+        <img 
+          src="/images/sell-payments.jpg" 
+          alt="Pagos seguros con QR" 
+          class="w-full h-full object-cover object-center" 
+          loading="lazy" 
+        />
+      </div>
+      <div class="flex flex-col gap-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#4b005f] leading-tight">
+          Pagos 100% seguros y conciliados
+        </h2>
+        <p class="text-lg text-gray-500 leading-relaxed">
+          Tus clientes pueden pagar al instante mediante QR o transferencia. El dinero fluye de manera transparente y segura, permitiéndote ver tus ganancias y reportes en tiempo real directamente en la plataforma.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="bg-[#f8f5fc] border border-purple-100 rounded-[2rem] p-12 md:p-20 text-center flex flex-col items-center gap-8 shadow-sm">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#4b005f] max-w-2xl">
+          Digitaliza tus ventas y llega a todo el país.
+        </h2>
+        <a 
+          href="https://vendedores.chaito.com.bo/" 
+          class="inline-flex items-center justify-center bg-[#4b005f] hover:bg-[#370a46] text-white px-10 py-4 rounded-xl font-bold text-lg transition-colors shadow-md"
+        >
+          Comenzar registro
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,16 +1,132 @@
 ---
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout 
+  title="Portal de Información | Chaito" 
+  description="Bienvenido al portal de información de Chaito. Descubre cómo comprar, nuestras políticas y obtén ayuda."
+>
+  <div class="container py-12 md:py-20 flex flex-col items-center justify-center min-h-[70vh]">
+    
+    <div class="w-full max-w-6xl bg-[#f8f5fc] rounded-3xl p-8 md:p-14 flex flex-col items-center text-center gap-12 shadow-sm border border-purple-50">
+      
+      {/* HEADER */}
+      <div class="flex flex-col gap-4">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-[#4b005f] tracking-tight">
+          ¿En qué te podemos ayudar?
+        </h1>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mt-2">
+          Encuentra toda la información sobre cómo funciona Chaito, nuestras políticas de protección y canales de soporte.
+        </p>
+      </div>
+
+      <!-- SECCIÓN PRINCIPAL: INFORMACIÓN Y AYUDA (Tarjetas Grandes) -->
+      <div class="w-full text-left">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <a href="/support" class="bg-white rounded-xl p-6 flex flex-col items-start text-left gap-4 shadow-sm border border-purple-100 hover:border-[#4b005f] hover:shadow-md transition-all group">
+            <div class="bg-[#f8f5fc] p-3 rounded-lg text-[#4b005f] group-hover:scale-110 transition-transform">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-5h3v3z"/><path d="M3 19a2 2 0 0 0 2 2h1v-5H3v3z"/></svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-[#4b005f] mb-1">Ayuda y soporte</h3>
+              <p class="text-sm text-gray-500 line-clamp-2">Encuentra respuestas rápidas y contacta a nuestro equipo de atención.</p>
+            </div>
+          </a>
+
+          <a href="/how-it-works" class="bg-white rounded-xl p-6 flex flex-col items-start text-left gap-4 shadow-sm border border-purple-100 hover:border-[#4b005f] hover:shadow-md transition-all group">
+            <div class="bg-[#f8f5fc] p-3 rounded-lg text-[#4b005f] group-hover:scale-110 transition-transform">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-[#4b005f] mb-1">Cómo funciona</h3>
+              <p class="text-sm text-gray-500 line-clamp-2">Aprende el paso a paso para navegar, comprar y recibir tus productos.</p>
+            </div>
+          </a>
+
+          <a href="/safe-shopping" class="bg-white rounded-xl p-6 flex flex-col items-start text-left gap-4 shadow-sm border border-purple-100 hover:border-[#4b005f] hover:shadow-md transition-all group">
+            <div class="bg-[#f8f5fc] p-3 rounded-lg text-[#4b005f] group-hover:scale-110 transition-transform">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-[#4b005f] mb-1">Compra segura</h3>
+              <p class="text-sm text-gray-500 line-clamp-2">Conoce nuestras medidas y garantías para proteger tu dinero.</p>
+            </div>
+          </a>
+
+          <a href="/create-request" class="bg-white rounded-xl p-6 flex flex-col items-start text-left gap-4 shadow-sm border border-purple-100 hover:border-[#4b005f] hover:shadow-md transition-all group">
+            <div class="bg-[#f8f5fc] p-3 rounded-lg text-[#4b005f] group-hover:scale-110 transition-transform">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-[#4b005f] mb-1">Crear solicitud</h3>
+              <p class="text-sm text-gray-500 line-clamp-2">Abre un ticket para consultas específicas o seguimiento de casos.</p>
+            </div>
+          </a>
+
+          <a href="/about" class="bg-white rounded-xl p-6 flex flex-col items-start text-left gap-4 shadow-sm border border-purple-100 hover:border-[#4b005f] hover:shadow-md transition-all group">
+            <div class="bg-[#f8f5fc] p-3 rounded-lg text-[#4b005f] group-hover:scale-110 transition-transform">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M9 8h1"/><path d="M9 12h1"/><path d="M9 16h1"/><path d="M14 8h1"/><path d="M14 12h1"/><path d="M14 16h1"/><path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/></svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-[#4b005f] mb-1">Quiénes somos</h3>
+              <p class="text-sm text-gray-500 line-clamp-2">Descubre nuestra historia y la misión detrás del marketplace.</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <hr class="w-full border-t border-purple-100/50" />
+
+      <!-- SECCIÓN: LEGAL (Tarjetas Compactas) -->
+      <div class="w-full text-left">
+        <h2 class="text-sm font-bold uppercase tracking-wider text-[#4b005f] mb-6 pl-2">
+          Políticas y Legal
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <a href="/terms" class="bg-white rounded-lg p-4 flex items-center gap-3 border border-purple-100 hover:border-[#4b005f] transition-colors group">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-[#4b005f] shrink-0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            <span class="text-sm font-medium text-gray-700 group-hover:text-[#4b005f]">Términos</span>
+          </a>
+          <a href="/privacy" class="bg-white rounded-lg p-4 flex items-center gap-3 border border-purple-100 hover:border-[#4b005f] transition-colors group">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-[#4b005f] shrink-0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <span class="text-sm font-medium text-gray-700 group-hover:text-[#4b005f]">Privacidad</span>
+          </a>
+          <a href="/returns-policy" class="bg-white rounded-lg p-4 flex items-center gap-3 border border-purple-100 hover:border-[#4b005f] transition-colors group">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-[#4b005f] shrink-0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12a10 10 0 1 0 10-10 10.3 10.3 0 0 0-7.3 3.3L2 8"/><path d="M2 2v6h6"/></svg>
+            <span class="text-sm font-medium text-gray-700 group-hover:text-[#4b005f]">Devoluciones</span>
+          </a>
+          <a href="/cookies" class="bg-white rounded-lg p-4 flex items-center gap-3 border border-purple-100 hover:border-[#4b005f] transition-colors group">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-[#4b005f] shrink-0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/><path d="M11 17v.01"/><path d="M7 14v.01"/></svg>
+            <span class="text-sm font-medium text-gray-700 group-hover:text-[#4b005f]">Cookies</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- SECCIÓN SECUNDARIA: ECOSISTEMA (Formato Discreto) -->
+      <div class="w-full text-left mt-4">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-4 pl-2">
+          Otros enlaces de interés
+        </h2>
+        <div class="flex flex-wrap gap-3">
+          <a href="/sell" class="bg-transparent border border-gray-200 rounded-full px-4 py-2 flex items-center gap-2 hover:border-[#4b005f] hover:bg-white transition-colors group">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-gray-400 group-hover:text-[#4b005f]" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            <span class="text-sm font-medium text-gray-500 group-hover:text-[#4b005f]">Vender en Chaito</span>
+          </a>
+          
+          <a href="/delivery-partner" class="bg-transparent border border-gray-200 rounded-full px-4 py-2 flex items-center gap-2 hover:border-[#4b005f] hover:bg-white transition-colors group">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-gray-400 group-hover:text-[#4b005f]" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            <span class="text-sm font-medium text-gray-500 group-hover:text-[#4b005f]">Ser repartidor</span>
+          </a>
+
+          <a href="/careers" class="bg-transparent border border-gray-200 rounded-full px-4 py-2 flex items-center gap-2 hover:border-[#4b005f] hover:bg-white transition-colors group">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-gray-400 group-hover:text-[#4b005f]" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span class="text-sm font-medium text-gray-500 group-hover:text-[#4b005f]">Trabaja con nosotros</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</Layout>

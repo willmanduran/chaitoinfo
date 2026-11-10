@@ -1,0 +1,128 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Quiénes somos" 
+  description="Conoce la historia y misión de Chaito, el marketplace boliviano diseñado para conectar a compradores y vendedores de forma segura."
+>
+  <!-- HERO -->
+  <section class="bg-[#f8f5fc] border-b border-purple-100 overflow-hidden relative">
+    <div class="container mx-auto px-4 md:px-8 py-16 md:py-24 text-center max-w-4xl flex flex-col items-center gap-6">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#4b005f] leading-tight">
+        Reinventando el comercio en Bolivia
+      </h1>
+      <p class="text-lg text-[var(--content-secondary)] leading-relaxed max-w-2xl">
+        Chaito nació con un propósito claro: democratizar el acceso al comercio electrónico en nuestro país, creando un ecosistema donde comprar y vender sea seguro, fácil y transparente.
+      </p>
+    </div>
+  </section>
+
+  <!-- MISIÓN Y VISIÓN -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-8 lg:gap-12">
+      
+      <!-- Card Misión -->
+      <div class="bg-white rounded-3xl border border-purple-100 p-8 lg:p-12 shadow-sm flex flex-col gap-6">
+        <div class="w-14 h-14 bg-purple-50 rounded-2xl flex items-center justify-center text-[#4b005f] mb-2">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold text-[#4b005f]">Nuestra Misión</h2>
+        <p class="text-gray-500 leading-relaxed text-lg">
+          Potenciar a los emprendedores y empresas bolivianas brindándoles tecnología de primer nivel, mientras ofrecemos a los compradores un catálogo diverso con la garantía de transacciones seguras y soporte local.
+        </p>
+      </div>
+
+      <!-- Card Visión -->
+      <div class="bg-[#f8f5fc] rounded-3xl border border-purple-100 p-8 lg:p-12 shadow-sm flex flex-col gap-6">
+        <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-[#4b005f] mb-2">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold text-[#4b005f]">Nuestra Visión</h2>
+        <p class="text-gray-500 leading-relaxed text-lg">
+          Ser el marketplace líder y referente de Bolivia. Queremos que "comprar por internet" deje de ser complicado y se convierta en una experiencia cotidiana, confiable y accesible para todos los bolivianos.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VALORES -->
+  <section class="py-16 md:py-24 bg-[#f8f5fc] border-y border-purple-100">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#4b005f] mb-4">Lo que nos mueve</h2>
+        <p class="text-gray-500 text-lg">Los pilares fundamentales que construyen la experiencia de Chaito.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Valor 1 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-purple-50 flex flex-col items-center text-center gap-4">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-[#4b005f]" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+          <h3 class="text-xl font-bold text-[#4b005f]">Confianza Total</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Implementamos verificación de vendedores y pagos por QR asegurados para que tu dinero y tus productos siempre estén protegidos.
+          </p>
+        </div>
+
+        <!-- Valor 2 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-purple-50 flex flex-col items-center text-center gap-4">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-[#4b005f]" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+          <h3 class="text-xl font-bold text-[#4b005f]">Innovación Local</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Tecnología desarrollada por y para bolivianos, entendiendo nuestras necesidades logísticas y métodos de pago reales.
+          </p>
+        </div>
+
+        <!-- Valor 3 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-purple-50 flex flex-col items-center text-center gap-4">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-[#4b005f]" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+          <h3 class="text-xl font-bold text-[#4b005f]">Comunidad</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Respaldados por Mercanexo S.R.L., no somos solo una plataforma, somos una red comercial enfocada en el crecimiento mutuo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="bg-[#f8f5fc] border border-purple-100 rounded-[2rem] p-12 md:p-20 text-center flex flex-col items-center gap-8 shadow-sm">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#4b005f] max-w-2xl">
+          Sé parte de la nueva era del comercio en Bolivia.
+        </h2>
+        <div class="flex flex-col sm:flex-row gap-4 mt-2">
+          <a 
+            href="https://chaito.com.bo" 
+            class="inline-flex items-center justify-center bg-[#4b005f] hover:bg-[#370a46] text-white px-10 py-4 rounded-xl font-bold text-lg transition-colors shadow-md"
+          >
+            Explorar productos
+          </a>
+          <a 
+            href="/sell" 
+            class="inline-flex items-center justify-center bg-white border border-purple-200 hover:border-[#4b005f] text-[#4b005f] px-10 py-4 rounded-xl font-bold text-lg transition-colors shadow-sm"
+          >
+            Quiero vender
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>   

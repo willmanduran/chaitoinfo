@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Gana entregando" 
+  description="Conviértete en repartidor de Chaito."
+>
+  <!-- HERO -->
+  <section class="bg-white border-b border-gray-100">
+    <div class="container mx-auto px-4 md:px-8 py-16 md:py-24 text-center max-w-4xl flex flex-col items-center gap-6">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#4b005f] leading-tight">
+        Tú conduces. Tú decides.
+      </h1>
+      <p class="text-lg text-gray-500 leading-relaxed">
+        Únete a la red de repartidores de Chaito. Ingresa a la plataforma desde tu navegador móvil, conéctate cuando quieras y empieza a generar ingresos extra recorriendo Santa Cruz. Sin descargas necesarias.
+      </p>
+      <a 
+        href="https://courier.chaito.com.bo/" 
+        class="mt-4 inline-flex items-center justify-center bg-[#4b005f] hover:bg-[#370a46] text-white px-10 py-4 rounded-xl font-medium transition-colors shadow-md"
+      >
+        Registrarme como conductor
+      </a>
+    </div>
+  </section>
+
+  <!-- BLOQUE VISUAL 1: Flexibilidad -->
+  <section class="py-16 md:py-24 bg-[#f8f5fc]">
+    <div class="container mx-auto px-4 md:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="w-full aspect-square md:aspect-video bg-white rounded-3xl border border-purple-100 flex items-center justify-center overflow-hidden shadow-sm">
+        <img 
+          src="/images/delivery-lifestyle.jpg" 
+          alt="Repartidor manejando su tiempo" 
+          class="w-full h-full object-cover object-center" 
+          loading="lazy" 
+        />
+      </div>
+      <div class="flex flex-col gap-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#4b005f] leading-tight">
+          Eres dueño de tu tiempo
+        </h2>
+        <p class="text-lg text-gray-500 leading-relaxed">
+          No hay horarios fijos ni jefes. Puedes conectarte un par de horas después del trabajo, los fines de semana o hacer de esto tu ingreso principal. Nuestro portal de repartidores se adapta a tu ritmo de vida.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOQUE VISUAL 2: Tecnología Web -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 md:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="flex flex-col gap-6 order-2 lg:order-1">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#4b005f] leading-tight">
+          Tecnología ligera y rápida
+        </h2>
+        <p class="text-lg text-gray-500 leading-relaxed">
+          Nuestra plataforma web está diseñada para no consumir espacio en tu celular. Ingresa desde tu navegador para ver cuánto vas a ganar antes de aceptar un pedido y optimizar tus rutas para entregar más en menos tiempo.
+        </p>
+      </div>
+      <div class="order-1 lg:order-2 w-full aspect-square md:aspect-video bg-purple-50 rounded-3xl border border-purple-100 flex items-center justify-center overflow-hidden shadow-inner">
+        <img 
+          src="/images/delivery-app.jpg" 
+          alt="Web App de repartidores" 
+          class="w-full h-full object-cover object-center" 
+          loading="lazy" 
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section class="pb-16 md:pb-24 bg-white">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="bg-[#f8f5fc] border border-purple-100 rounded-[2rem] p-12 md:p-20 text-center flex flex-col items-center gap-8 shadow-sm">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#4b005f] max-w-2xl">
+          Empieza a ganar dinero hoy.
+        </h2>
+        <a 
+          href="https://courier.chaito.com.bo/" 
+          class="inline-flex items-center justify-center bg-[#4b005f] hover:bg-[#370a46] text-white px-10 py-4 rounded-xl font-bold text-lg transition-colors shadow-md"
+        >
+          Ingresar a la plataforma
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
